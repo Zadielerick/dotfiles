@@ -14,6 +14,13 @@ vim.opt.undofile = true -- Save undo history
 vim.opt.updatetime = 250 -- Save to buffer after <updatetime> ms of inactivity
 vim.opt.timeoutlen = 300 -- How long to wait for map sequence, otherwise show which-key
 
+-- Indentation settings
+vim.opt.shiftwidth = 2 -- Width of a shift
+vim.opt.tabstop = 2 -- Maximum width of tab character
+vim.opt.softtabstop = 0 -- Disabled to keep <Tab> as tabstop width
+vim.opt.expandtab = false -- Expand tabs into spaces
+vim.opt.smartindent = true -- Auto-indent on new-lines (like function brackets)
+
 vim.opt.list = true -- Show whitespace characters
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 vim.opt.inccommand = 'split' -- Show previews in new window
